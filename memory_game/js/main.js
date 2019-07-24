@@ -1,10 +1,15 @@
-//checking console
-console.log("Up and running!");
-//creating cards
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
-//display value of two cards when flipped
-console.log("User flipped " + cardOne);
-console.log("User flipped " + cardThree);
+var cards = ["queen", "queen", "king", "king"]; // card array
+var cardsInPlay = []; // empty array
+var cardOne = cards[0];
+cardsInPlay.push(cardOne)
+var cardTwo = cards[1]
+cardsInPlay.push(cardTwo)
+console.log("User flipped " + cardsInPlay) // console showing cards in play
+if (cardsInPlay.length === 2) // needs a then
+
+if (cardsInPlay[0] === cardsInPlay[1]) {
+	alert("You found a match!");
+}
+else if (cardsInPlay[0] !== cardsInPlay[1]) {
+	alert("Sorry, try again.");
+}
